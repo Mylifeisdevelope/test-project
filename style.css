@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+button {
+    background-color: transparent;
+    outline: transparent;
+    border: transparent;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.header {
+    max-width: 1200px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 20px;
+}
+.header-logo {
+    flex: 0 1 140px;
+}
+.header-logo img {
+    max-width: 135px;
+    width: 100%;
+    height: 30px;
+}
+.header-form__block {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.header-form__block::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: #ebebf1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search-form {
+    position: relative;
+    width: 100%;
+    padding: 0 60px;
+}
+.search {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ebebf1;
+    padding-left: 40px;
+    border-radius: 5px;
+}
+.search-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    transform: translateY(-50%);
+}
+.search-button i {
+    font-size: 16px;
+    color: #768298;
+}
+.header-profile__block {
+    padding-left: 20px;
+    flex: 0 1 140px;
+}
+.header-user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-user__name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #768298;
+}
+.header-user__img {
+    padding-left: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .search-form {
+        padding: 0 50px;
+    }
+}
+@media only screen and (min-width: 375px) {
+    .media-user__block {
+        display: none;
+    }
+    .media-form__block {
+        display: none;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .header {
+        height: 60px;
+        border-bottom: 1px solid #bbc4d6;
+    }
+    .header-logo {
+        flex: 0 1 calc(50%);
+    }
+    .media-user__block {
+        flex: 0 1 calc(50%);
+        display: flex;
+        justify-content: flex-end;
+    }
+    .search-form {
+        padding: 0;
+    }
+    .header-form__block {
+        display: none;
+    }
+    .header-profile__block {
+        display: none;
+    }
+    .search-button {
+        position: absolute;
+        left: 20px;
+    }
+    .media-form__block {
+        width: 100%;
+    }
+}
+.media-header__form {
+    position: relative;
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.osoft-block__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #121920;
+}
+.osoft-block {
+    margin-top: 70px;
+}
+.osoft-block__content {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.osoft-block__item {
+    flex: 0 1 calc(25% - 30px);
+    height: 120px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ebebf1;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+    .osoft-block__item {
+        flex: 0 1 calc(33.333% - 30px);
+    }
+}
+@media only screen and (max-width: 375px) {
+    .osoft-block__item {
+        flex: 0 1 100%;
+    }
+}
+.osoft-block__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.osoft-block__link img {
+    object-fit: cover;
+}
